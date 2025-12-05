@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +10,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
+        /* ADDED: Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             min-height: 100vh;
             /* Ensure you have this image in your public/images folder */
@@ -236,6 +240,119 @@
                                 <p class="mb-2"><i class="fas fa-coffee me-2 text-warning"></i>Breakfast Buffet</p>
                                 <p class="mb-2"><i class="fas fa-wifi me-2 text-success"></i>High-Speed WiFi</p>
                                 <p class="mb-0"><i class="fas fa-clock me-2 text-primary"></i>24/7 Concierge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section mt-5 p-4" id="reviews">
+                <div class="text-center mb-4">
+                    <h4 class="fw-bold">Guest Experiences</h4>
+                    <p class="text-white-50">See what our visitors have to say about their stay.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-3 border border-light border-opacity-10 rounded-4 h-100 bg-white bg-opacity-10">
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-white-50">"The view from the luxury suite was breathtaking. The service was impeccable from start to finish."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="bg-primary bg-opacity-25 rounded-circle p-2 me-2 text-white">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold fs-6">Sarah Jenkins</h6>
+                                    <small class="text-white-50">Business Traveler</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border border-light border-opacity-10 rounded-4 h-100 bg-white bg-opacity-10">
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="fst-italic text-white-50">"Absolutely loved the infinity pool. A perfect weekend getaway spot. The food was 5-star quality."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="bg-success bg-opacity-25 rounded-circle p-2 me-2 text-white">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold fs-6">Michael Chen</h6>
+                                    <small class="text-white-50">Vacationer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border border-light border-opacity-10 rounded-4 h-100 bg-white bg-opacity-10">
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-white-50">"Clean, modern, and very secure. The booking process was so easy using this portal."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="bg-danger bg-opacity-25 rounded-circle p-2 me-2 text-white">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold fs-6">Jessica Doe</h6>
+                                    <small class="text-white-50">Family Trip</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section mt-5 p-4" id="about">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold mb-3">About Bluebird Hotel</h4>
+                        <p class="text-white-50">
+                            Established in 2010, Bluebird Hotel has become a landmark of luxury and comfort in the heart of the city. 
+                            Our mission is to provide an unforgettable experience where modern elegance meets traditional hospitality.
+                        </p>
+                        <p class="text-white-50">
+                            Whether you are visiting for business or leisure, our dedicated team is committed to ensuring your stay is 
+                            nothing short of perfection. We pride ourselves on attention to detail, from our thread counts to our 
+                            locally sourced dining ingredients.
+                        </p>
+                        <div class="mt-4">
+                            <a href="{{ route('guestbooking') }}" class="btn btn-outline-light rounded-pill px-4">Book Your Stay</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="row g-3 text-center">
+                            <div class="col-6">
+                                <div class="p-3 border border-light border-opacity-10 rounded-3 bg-dark bg-opacity-25 h-100">
+                                    <i class="fas fa-utensils text-warning mb-2 fs-4"></i>
+                                    <h5 class="fw-bold text-white mb-0">3</h5>
+                                    <small class="text-white-50">Gourmet Restaurants</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border border-light border-opacity-10 rounded-3 bg-dark bg-opacity-25 h-100">
+                                    <i class="fas fa-star text-warning mb-2 fs-4"></i>
+                                    <h5 class="fw-bold text-white mb-0">4.9</h5>
+                                    <small class="text-white-50">Average Rating</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border border-light border-opacity-10 rounded-3 bg-dark bg-opacity-25 h-100">
+                                    <i class="fas fa-car text-info mb-2 fs-4"></i>
+                                    <h5 class="fw-bold text-white mb-0">Valet</h5>
+                                    <small class="text-white-50">Free Parking</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border border-light border-opacity-10 rounded-3 bg-dark bg-opacity-25 h-100">
+                                    <i class="fas fa-shield-alt text-success mb-2 fs-4"></i>
+                                    <h5 class="fw-bold text-white mb-0">24/7</h5>
+                                    <small class="text-white-50">Secure Facility</small>
+                                </div>
                             </div>
                         </div>
                     </div>
